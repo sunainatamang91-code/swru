@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE NEW STANDARD | 商品名</title>
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ヒーロー背景を「ジャケットを着た女性」が映える画像に変更 */
+        .hero-bg {
+            background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1)), 
+                        url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center 20%;
+        }
+    </style>
+</head>
+<body class="bg-[#fcfcfc] text-[#1a1a1a]">
+
+    <!-- 1. Hero Section -->
+    <section class="relative h-screen flex items-center justify-center hero-bg overflow-hidden">
+        <!-- 明るいオーバーレイ（女性の顔やジャケットが隠れすぎないよう調整） -->
+        <div class="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-[#fcfcfc]"></div>
+        
+        <div class="absolute top-10 right-10 opacity-5 select-none">
+            <h2 class="font-anton text-9xl leading-none text-gray-900">STYLE<br>ICON</h2>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <span class="inline-block bg-white/80 backdrop-blur-sm border border-gray-200 text-gray-800 px-8 py-2.5 mb-8 font-bold tracking-[0.2em] rounded-full shadow-sm text-sm">2026 NEW COLLECTION</span>
+            <h1 class="text-6xl md:text-9xl font-black mb-8 leading-tight text-gray-900 tracking-tighter">
+                妥協のない、<br>
+                <span class="text-gradient">理想の自分。</span>
+            </h1>
+            <p class="text-lg md:text-2xl mb-12 text-gray-700 max-w-2xl mx-auto leading-relaxed font-medium">
+                「良いものは高い」という常識を疑え。<br>
+                洗練されたデザインと、長く続く品質を、全ての若者へ。
+            </p>
+            <a href="#purchase" class="btn-main rounded-full">今すぐ手に入れる</a>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
+            <p class="text-[10px] tracking-[0.3em] text-gray-500 mb-4 uppercase font-bold">Scroll Down</p>
+            <div class="w-px h-16 bg-gradient-to-b from-gray-400 to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- 2. Agitation Section -->
+    <section class="py-32 bg-[#f8f9fa] text-[#1a1a1a] relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="reveal">
+                <div class="text-center mb-24">
+                    <span class="section-tag">Question</span>
+                    <h2 class="text-4xl md:text-7xl font-black italic text-gray-900 tracking-tight">Quality over Quantity?</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-20 items-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-gray-200/50 rounded-[2rem] scale-95 group-hover:scale-100 transition-transform duration-500"></div>
+                        <div class="img-container shadow-xl relative z-10 border border-white">
+                            <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1000&auto=format&fit=crop" alt="style" class="w-full h-auto group-hover:scale-105 transition-all duration-700">
+                        </div>
+                    </div>
+                    <div class="space-y-10">
+                        <p class="text-4xl font-black leading-tight text-gray-900">
+                            「安さ」だけで選ぶのは、<br><span class="text-gray-400">もう終わりにしませんか？</span>
+                        </p>
+                        <p class="text-gray-600 text-xl leading-relaxed font-light">
+                            クローゼットに眠る、一度着ただけで飽きてしまった服たち。<br>
+                            流行を追うだけの安価な選択は、あなたの個性を埋もれさせてしまいます。
+                        </p>
+                        <div class="pt-6">
+                            <p class="text-6xl font-anton text-gray-100 uppercase tracking-tighter">Essential Beauty</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Solution Section -->
+    <section class="py-32 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <span class="section-tag">The Solution</span>
+            <h3 class="text-4xl md:text-6xl font-black mb-24 text-gray-900 tracking-tight">選ばれる3つの理由</h3>
+            <div class="grid md:grid-cols-3 gap-16">
+                <div class="reveal group">
+                    <div class="img-container mb-10 aspect-[4/5] bg-gray-50 border border-gray-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=800&auto=format&fit=crop" alt="design" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-2xl font-black mb-4 text-gray-900 tracking-wide">Timeless</h4>
+                    <p class="text-gray-500 font-light leading-relaxed">流行に左右されず、かつ現代的なシルエット。どんな時代でも色褪せない一着を。</p>
+                </div>
+                <div class="reveal group" style="transition-delay: 0.1s;">
+                    <div class="img-container mb-10 aspect-[4/5] bg-gray-50 border border-gray-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1558304970-abd589baebe5?q=80&w=800&auto=format&fit=crop" alt="quality" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-2xl font-black mb-4 text-gray-900 tracking-wide">Premium</h4>
+                    <p class="text-gray-500 font-light leading-relaxed">厳選された最高級のオーガニックコットンを使用。肌に溶け込むような体験を。</p>
+                </div>
+                <div class="reveal group" style="transition-delay: 0.2s;">
+                    <div class="img-container mb-10 aspect-[4/5] bg-gray-50 border border-gray-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=800&auto=format&fit=crop" alt="price" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="text-2xl font-black mb-4 text-gray-900 tracking-wide">Direct</h4>
+                    <p class="text-gray-500 font-light leading-relaxed">中間コストを極限まで排除。高品質を手の届く価格で提供することに成功しました。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Narrowing Down (Countdown) -->
+    <section class="py-24 bg-gray-900 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black mb-10 tracking-tighter italic">LIMITED OFFER.</h2>
+            <div class="flex justify-center space-x-8 text-4xl font-anton" id="countdown">
+                <div class="flex flex-col bg-white/10 p-4 rounded-xl min-w-[90px]"><span id="hours-display" class="leading-none">02</span><small class="text-[10px] uppercase font-sans font-bold tracking-widest mt-2 opacity-60">Hours</small></div>
+                <div class="flex flex-col bg-white/10 p-4 rounded-xl min-w-[90px]"><span id="minutes-display" class="leading-none">45</span><small class="text-[10px] uppercase font-sans font-bold tracking-widest mt-2 opacity-60">Mins</small></div>
+                <div class="flex flex-col bg-white/10 p-4 rounded-xl min-w-[90px]"><span id="seconds-display" class="leading-none">12</span><small class="text-[10px] uppercase font-sans font-bold tracking-widest mt-2 opacity-60">Secs</small></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Action Section -->
+    <section id="purchase" class="py-32 bg-[#fcfcfc] text-[#1a1a1a] relative">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="reveal grid md:grid-cols-2 gap-20 items-center">
+                <div class="img-container shadow-2xl order-2 md:order-1 border border-white">
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop" alt="final" class="w-full h-auto">
+                </div>
+                <div class="text-left order-1 md:order-2">
+                    <span class="section-tag">Final Call</span>
+                    <h2 class="text-6xl md:text-8xl font-black mb-10 leading-none text-gray-900 tracking-tighter">Start <br>New Era.</h2>
+                    <div class="p-12 border border-gray-200 rounded-[2.5rem] bg-white shadow-xl">
+                        <div class="flex items-baseline gap-4 mb-8">
+                            <p class="text-6xl font-black italic text-gray-900 tracking-tighter">¥4,980</p>
+                            <p class="text-xl text-gray-400 line-through">¥12,800</p>
+                        </div>
+                        <button onclick="handlePurchase()" class="btn-main rounded-2xl w-full text-center py-6 text-xl">
+                            カートに追加する
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 bg-white border-t border-gray-100 text-center text-gray-400 text-xs tracking-widest uppercase">
+        &copy; 2026 Brand Name. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
